@@ -1,0 +1,228 @@
+/* Reset CSS
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*general styles*/
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+
+/*section header*/
+
+.container_header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.logo {
+    width: 20%;
+}
+
+#logo {
+    width: 65px;
+    height: auto;
+    padding: 15px 0 10% 15px;
+}
+
+.name {
+    width: 70%;
+    text-align: right;
+    padding: 15px 10% 0 0;
+}
+
+/*section main*/
+
+.main_small {
+    width: 100%;
+    display: block;
+}
+
+.main_big {
+    display: none;
+}
+
+/*section work*/
+
+#featured_work {
+    text-align: center;
+    margin: 25px auto 25px;
+    background-color: white;
+}
+
+.container_work {
+    background-color: #f7f7f7;
+    padding-top: 5px;
+}
+
+.restaurant {
+    width: 100%;
+}
+
+.page {
+    width: 80%;
+    margin: 0 10%;
+    border: 1px solid grey;
+}
+
+.page_big_img {
+    display: none;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 40px auto 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*footer*/
+
+footer {
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+#footer {
+    font-size: 0.6em;
+    text-transform: lowercase;
+    margin: 15px auto;
+}
+
+
+/* media queries: min 700px*/
+
+@media screen and (min-width: 750px) {
+
+    .container_work {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #restaurant, #bakery, #pixelmaker, #randomquote {
+        width: 50%;
+        text-align: center;
+    }
+
+    .page {
+        width: 96%;
+        margin: 0;
+    }
+
+    footer {
+        margin-top: 65px;
+    }
+
+    #footer {
+        font-size: 0.9em;
+    }
+    
+} 
+
+
+
+/* media queries: min 1500px*/
+
+@media screen and (min-width: 1500px) {
+
+    .container_header {
+        width: 80%;
+        margin: 0 auto;
+    }
+     
+    .main_big {
+        display: block;
+        width: 100%;
+        margin-bottom: 90px;
+    }
+ 
+    .main_small {
+        display: none;
+    }
+
+    .container_work {
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .page {
+        display:none;
+    }
+
+    .page_big_img {
+        display: block;
+        width: 80%;
+        margin: 0 10%;
+        border: 1px solid grey;
+    }
+
+}
